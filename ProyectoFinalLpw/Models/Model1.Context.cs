@@ -13,10 +13,10 @@ namespace ProyectoFinalLpw.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class VentasEntities : DbContext
+    public partial class VentasEntities1 : DbContext
     {
-        public VentasEntities()
-            : base("name=VentasEntities")
+        public VentasEntities1()
+            : base("name=VentasEntities1")
         {
         }
     
