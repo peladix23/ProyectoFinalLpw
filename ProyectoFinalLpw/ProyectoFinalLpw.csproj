@@ -216,8 +216,14 @@
     <Content Include="Views\Vendedor\Vendedor.cshtml" />
     <Content Include="Views\Proveedor\Proveedor.cshtml" />
     <Content Include="Views\Ventas\Ventas.cshtml" />
-    <Content Include="Views\Productos\Productos.cshtml" />
-    <Content Include="Views\Factura\Factura.cshtml" />
+    <Content Include="Views\Factura\Create.cshtml" />
+    <Content Include="Views\Factura\Index.cshtml" />
+    <Content Include="Views\Factura\_Delete.cshtml" />
+    <Content Include="Views\Factura\_Edit.cshtml" />
+    <Content Include="Views\Productos\Create.cshtml" />
+    <Content Include="Views\Productos\Index.cshtml" />
+    <Content Include="Views\Productos\_Edit.cshtml" />
+    <Content Include="Views\Productos\_Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

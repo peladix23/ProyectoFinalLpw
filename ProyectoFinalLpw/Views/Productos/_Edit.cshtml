@@ -1,0 +1,31 @@
+﻿
+@model ProyectoFinalLpw.Models.Productos
+<div class="modal-dialog">
+    <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Detalle Productos</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <form action="@Url.Action("Edit","Productos")" method="post">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <label> Nombre:</label>
+                <input type="text" name="nombre" value="@Model.Nombre" class="form-control" />
+                <label>Marca:</label>
+                <input type="text" name="Marca" value="@Model.Marca" class="form-control" />
+                <label>Precio:</label>
+                <input type="text" name="Precio" value="@Model.Precio" class="form-control" />
+                <label>Stock:</label>
+                <input type="text" name="Stock" value="@Model.Stock" class="form-control" />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                <input type="submit" value="Editar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

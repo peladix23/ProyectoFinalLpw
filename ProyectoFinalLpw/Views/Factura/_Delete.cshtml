@@ -1,0 +1,24 @@
+﻿
+@model ProyectoFinalLpw.Models.Facturas
+<div class="modal-dialog">
+    <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Eliminar Factura</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <form action="/Factura/Delete" method="post">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <input type="hidden" name="Total_Venta" value="@Model.Descripcion" />
+                <h2>¿Desea eliminar factura @Model.Descripcion ?</h2>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                <input type="submit" value="Eliminar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
